@@ -141,7 +141,7 @@ ul li:hover {
     top: 0;
     bottom: 0;
     left: 10%;
-    font-size: 8vh;
+    font-size: 6vh;
     letter-spacing: 20px;
     text-align: center;
     transition: ease-in;
@@ -197,8 +197,8 @@ ul li:hover {
 .forwordWrap h1 {
     color: whitesmoke;
     font-family: 'Noto Serif TC', serif;
-    text-shadow: 3px 3px 5px black;
-    font-size: 6vh;
+    text-shadow: 2px 2px 5px black;
+    font-size: 5vh;
     letter-spacing: 20px;
     text-align: center;
 }
@@ -223,7 +223,7 @@ ul li:hover {
 
 .forwordWrap .txt p {
     margin: 15px;
-    font-size: 1vh;
+    font-size: 2.5vh;
     text-align: center;
     color: whitesmoke;
     font-weight: 300;
@@ -281,7 +281,7 @@ ul li:hover {
 
 .wineWrapPhoto .txt p {
     margin: 15px;
-    font-size: 1vh;
+    font-size: 2.5vh;
     text-align: center;
     color: whitesmoke;
     font-weight: 300;
@@ -326,7 +326,7 @@ ul li:hover {
 
 .wineWrap .txt p {
     margin: 15px;
-    font-size: 1vh;
+    font-size: 2.5vh;
     text-align: center;
     font-weight: 300;
     font-family: Georgia, 'Times New Roman', Times, serif;
