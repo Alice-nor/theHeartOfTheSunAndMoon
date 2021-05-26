@@ -195,16 +195,25 @@ ul li:hover {
     bottom: 5%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .wrap .txt p {
-    width: 180px;
+    width: 150px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     text-align: center;
     color: whitesmoke;
     font-weight: 800;
     font-style: italic;
+    font-size: 2vh;
+}
+
+.wrap .txt .copy {
+    background-color: transparent;
+    color: gainsboro;
+    opacity: .8;
 }
 
 
@@ -213,7 +222,6 @@ ul li:hover {
 .forwordWrap {
     padding-top: 70px;
     width: 100%;
-    height: 100%;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -231,6 +239,7 @@ ul li:hover {
 .forwordWrap .item img {
     margin: 10px;
     width: 80%;
+    border: 3px double whitesmoke;
     border-radius: 20px 0px 20px 0px;
     box-shadow: -15px 10px 0px #605D47;
 }
@@ -263,11 +272,23 @@ ul li:hover {
     text-align: left;
 }
 
+.copy {
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    color: gainsboro;
+    opacity: .8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vh;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
 
 /* highlandBarleyWine */
 
 .carousel {
-    margin-top: 30px;
+    margin-top: 150px;
 }
 
 .carousel-caption {
@@ -277,20 +298,13 @@ ul li:hover {
 
 .wineWrapPhoto {
     padding-top: 60px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
     margin: auto;
     justify-content: center;
     background-color: #959176;
-}
-
-.wineWrapPhoto h1 {
-    color: whitesmoke;
-    font-family: 'Noto Serif TC', serif;
-    text-shadow: 3px 3px 5px black;
-    font-size: 6vh;
-    letter-spacing: 20px;
-    text-align: center;
+    background: linear-gradient(to bottom, #959176 2%, white 100%);
 }
 
 .wineWrapPhoto .item {
@@ -299,6 +313,42 @@ ul li:hover {
     flex-direction: column;
     margin: auto;
     align-items: center;
+    position: relative;
+}
+
+.wineWrapPhoto .txt {
+    padding: 10px;
+}
+
+.wineWrapPhoto h1 {
+    color: whitesmoke;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-shadow: 2px 2px 5px black;
+    font-size: 5vh;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.wineWrapPhoto h3 {
+    position: absolute;
+    width: 40%;
+    top: 5%;
+    right: 5%;
+    color: whitesmoke;
+    font-size: 2vh;
+    line-height: 3.5vh;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 2px 2px 3px black;
+}
+
+.triangle {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    opacity: .5;
 }
 
 .wineWrapPhoto .item img {
@@ -307,71 +357,40 @@ ul li:hover {
     border-radius: 20px 0px 20px 0px;
 }
 
-.wineWrapPhoto .txt {
-    padding: 10px;
-}
-
 .wineWrapPhoto .txt p {
+    padding: 0 20px;
     margin: 15px;
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-align: center;
-    color: whitesmoke;
-    font-weight: 300;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
-}
-
-.wineWrap {
-    width: 100%;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    background: linear-gradient(to bottom, #959176 2%, white 100%);
-}
-
-.wineWrap h1 {
-    color: whitesmoke;
-    font-family: 'Noto Serif TC', serif;
-    text-shadow: 3px 3px 5px black;
-    font-size: 6vh;
-    letter-spacing: 20px;
-    text-align: center;
-}
-
-.wineWrap .item {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-}
-
-.wineWrap .item img {
-    margin: 10px;
-    width: 100%;
-    border-radius: 20px 0px 20px 0px;
-}
-
-.wineWrap .txt {
-    padding: 10px;
-}
-
-.wineWrap .txt p {
-    margin: 15px;
-    font-size: 1.5vh;
-    text-align: center;
-    font-weight: 300;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
     color: black;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
 }
 
 .carousel-caption p {
     text-align: center !important;
 }
 
-video {
+.video {
+    margin: auto;
     width: 90%;
-    margin-bottom: 10px;
-    padding: 20px;
+    background-color: white;
+    border: 3px double #605D47;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video p {
+    width: 50%;
+    color: #605D47;
+    font-size: 2vh;
+    line-height: 3.5vh;
+    font-family: 'Noto Serif TC', serif;
+    margin: 10px 0;
+}
+
+.video video {
+    width: 100%;
 }

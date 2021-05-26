@@ -73,27 +73,65 @@
         color: rgba(240, 238, 218, 0.5);
         font-size: 0.5vh;
     }
-    .forwordWrap h1 {
+    .forwordWrap .txt h1 {
         writing-mode: vertical-lr;
         font-size: 5vh;
+        float: unset;
     }
     .forwordWrap .txt p {
         width: 85%;
     }
     /* highlandBarleyWine */
+    .wineWrapPhoto .item {
+        width: 100%;
+    }
     .wineWrapPhoto .item .txt {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .wineWrapPhoto .item .txt h1 {
         writing-mode: vertical-lr;
+        font-size: 8vh;
+        text-align: center;
+        position: unset;
+    }
+    .wineWrapPhoto .item .txt h3 {
+        width: 15%;
+        text-align: right;
+        text-shadow: 2px 2px 7px black;
+    }
+    .wineWrapPhoto .item .txt .description {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .triangle {
+        display: none;
     }
     .carousel {
-        width: 80%;
-        margin-left: 50px;
+        margin-top: 30px;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        /* margin-top: 0; */
     }
-    .wineWrap .item .txt {
-        width: 80%;
+    .video {
+        width: 60%;
+        margin-top: 30px;
+        align-items: left;
+    }
+    .video .txt {
+        width: 100%;
+    }
+    .video p {
+        width: 30%;
+        font-size: 3vh;
+        line-height: 5vh;
+        padding: 0 20px;
     }
 }
 
