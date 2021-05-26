@@ -1,0 +1,345 @@
+/* 這邊是手機版本！ */
+
+
+/* 以手機版本為主要觀看方式 */
+
+*,
+ ::after,
+ ::before {
+    box-sizing: unset !important;
+}
+
+ol,
+ul {
+    padding-left: 0 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+.foreword {
+    height: 100%;
+    position: relative;
+    background-color: #959176;
+}
+
+
+/* nav */
+
+.menu_btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 2%;
+    padding: 10px;
+}
+
+.menu_btn::before {
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0px 15px 0px whitesmoke, 0px -15px 0px whitesmoke;
+    margin: auto;
+}
+
+.menu_btn span {
+    opacity: 0;
+    overflow: hidden;
+    z-index: -10;
+}
+
+#menu_control:checked~nav {
+    left: 0;
+}
+
+#menu_control {
+    position: absolute;
+    display: none;
+    z-index: -2;
+}
+
+nav {
+    background-color: #605D47;
+    width: 55%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    transition: .5s;
+    left: -100%;
+    overflow: scroll;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-ul {
+    width: 100%
+}
+
+.main-li {
+    padding: 10px 20px;
+    border-bottom: 3px double rgba(245, 245, 245, 0.425);
+}
+
+nav a {
+    color: whitesmoke;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 3.2vh;
+    padding: 0px 10px;
+    line-height: 35px;
+}
+
+.ul-item li a {
+    color: rgb(240, 238, 218);
+    font-size: 2.5vh;
+}
+
+.ul-item li a::before {
+    content: ' +  ';
+}
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+/* index */
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    transition: ease-in;
+}
+
+.wrap h1 {
+    position: absolute;
+    writing-mode: vertical-lr;
+    color: whitesmoke;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 5px 5px 10px black;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    font-size: 8vh;
+    letter-spacing: 20px;
+    text-align: center;
+    transition: ease-in;
+}
+
+.wrap .container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/DSC_34282.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, .1);
+    background-blend-mode: multiply;
+}
+
+.wrap .container img {
+    height: 100%;
+}
+
+.wrap .txt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap .txt p {
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+/* foreword */
+
+.forwordWrap {
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.forwordWrap h1 {
+    color: whitesmoke;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 3px 3px 5px black;
+    font-size: 6vh;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.forwordWrap .item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.forwordWrap .item img {
+    margin: 10px;
+    width: 100%;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.forwordWrap .txt {
+    padding: 10px;
+}
+
+.forwordWrap .txt p {
+    margin: 15px;
+    font-size: 1vh;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+
+/* highlandBarleyWine */
+
+.carousel {
+    margin-top: 30px;
+}
+
+.carousel-caption {
+    align-items: center;
+    padding-bottom: 1em !important;
+}
+
+.wineWrapPhoto {
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #959176;
+}
+
+.wineWrapPhoto h1 {
+    color: whitesmoke;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 3px 3px 5px black;
+    font-size: 6vh;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.wineWrapPhoto .item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.wineWrapPhoto .item img {
+    margin: 10px;
+    width: 100%;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.wineWrapPhoto .txt {
+    padding: 10px;
+}
+
+.wineWrapPhoto .txt p {
+    margin: 15px;
+    font-size: 1vh;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.wineWrap {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background: linear-gradient(to bottom, #959176 2%, white 100%);
+}
+
+.wineWrap h1 {
+    color: whitesmoke;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 3px 3px 5px black;
+    font-size: 6vh;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.wineWrap .item {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.wineWrap .item img {
+    margin: 10px;
+    width: 100%;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.wineWrap .txt {
+    padding: 10px;
+}
+
+.wineWrap .txt p {
+    margin: 15px;
+    font-size: 1vh;
+    text-align: center;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    color: black;
+}
+
+.carousel-caption p {
+    text-align: center !important;
+}
+
+video {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 20px;
+}
