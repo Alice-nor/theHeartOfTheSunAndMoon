@@ -161,15 +161,15 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* font-style: italic; */
 }
 
 .wrap-p p {
-    margin: 10px 0px;
+    margin: 5px 0px;
     text-shadow: 5px 5px 10px black;
     text-align: left;
     font-size: 1.5vh;
     font-weight: 600;
+    line-height: 4vh;
 }
 
 .wrap .container {
@@ -188,32 +188,18 @@ ul li:hover {
     height: 100%;
 }
 
-.wrap .txt {
+.copy-index {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 5%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.wrap .txt p {
-    width: 150px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
     text-align: center;
-    color: whitesmoke;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 2vh;
-}
-
-.wrap .txt .copy {
     background-color: transparent;
     color: gainsboro;
     opacity: .8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2vh;
+    letter-spacing: 5px;
+    left: 0;
+    right: 0;
+    bottom: 5%;
 }
 
 
@@ -274,7 +260,7 @@ ul li:hover {
 
 .copy {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: transparent;
     color: gainsboro;
     opacity: .8;
@@ -288,12 +274,20 @@ ul li:hover {
 /* highlandBarleyWine */
 
 .carousel {
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .carousel-caption {
     align-items: center;
     padding-bottom: 1em !important;
+}
+
+.carousel-inner {
+    border: 3px double whitesmoke;
+}
+
+.carousel-caption p {
+    text-align: center !important;
 }
 
 .wineWrapPhoto {
@@ -304,7 +298,11 @@ ul li:hover {
     margin: auto;
     justify-content: center;
     background-color: #959176;
-    background: linear-gradient(to bottom, #959176 2%, white 100%);
+    background-image: url(../img/wine4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
 }
 
 .wineWrapPhoto .item {
@@ -334,27 +332,19 @@ ul li:hover {
 
 .wineWrapPhoto h3 {
     position: absolute;
-    width: 40%;
-    top: 5%;
+    width: 30%;
+    top: 2%;
     right: 5%;
     color: whitesmoke;
     font-size: 2vh;
     line-height: 3.5vh;
+    text-align: right;
     font-family: 'Noto Serif TC', serif;
     text-shadow: 2px 2px 3px black;
 }
 
-.triangle {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    opacity: .5;
-}
-
 .wineWrapPhoto .item img {
-    margin: 10px;
     width: 100%;
-    border-radius: 20px 0px 20px 0px;
 }
 
 .wineWrapPhoto .txt p {
@@ -362,35 +352,60 @@ ul li:hover {
     margin: 15px;
     font-size: 2vh;
     text-align: center;
-    color: black;
+    color: whitesmoke;
     font-weight: 300;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
 }
 
-.carousel-caption p {
-    text-align: center !important;
+.description {
+    margin: 50px 0;
 }
 
-.video {
-    margin: auto;
-    width: 90%;
-    background-color: white;
-    border: 3px double #605D47;
+.videoPart {
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #959176;
 }
 
-.video p {
+.videoPart .wrap {
+    border: 3px double whitesmoke !important;
+    width: 80%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.videoPart p {
     width: 50%;
-    color: #605D47;
+    color: whitesmoke;
     font-size: 2vh;
     line-height: 3.5vh;
     font-family: 'Noto Serif TC', serif;
     margin: 10px 0;
 }
 
-.video video {
+.videoPart video {
     width: 100%;
+}
+
+.videoPart .copy {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: gainsboro;
+    opacity: .8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vh;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    padding: 0;
 }
