@@ -36,12 +36,8 @@
         margin: auto;
         width: 70%;
     }
-    .wineWrapPhoto .item .txt h1 {
-        font-size: 6vh;
-    }
     .wineWrapPhoto .item .txt h3 {
         width: 10%;
-        font-size: 2.5vh;
         line-height: 5vh;
         right: 3%;
     }
@@ -52,11 +48,18 @@
     }
     .videoPart .wrap {
         width: 50%;
-        margin: 50px 0;
+        margin-top: 20px;
     }
     .videoPart .wrap .txt {
         width: 90%;
         margin: 10px;
+    }
+    .videoPart p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .videoPart .conversation p {
+        padding-top: 0px;
     }
 }
 
@@ -167,7 +170,7 @@
     }
     .wineWrapPhoto .item .txt h1 {
         writing-mode: vertical-lr;
-        font-size: 8vh;
+        font-size: 2.5rem;
         text-align: center;
         position: unset;
     }
@@ -175,7 +178,7 @@
         width: 100%;
         text-align: right;
         right: 8%;
-        font-size: 2vh;
+        font-size: .5rem;
         text-shadow: 2px 2px 7px black;
     }
     .wineWrapPhoto .item .txt .description {
@@ -193,15 +196,29 @@
         /* margin-top: 0; */
     }
     .videoPart {
-        width: 100%;
-        align-items: left;
+        padding-top: 50px;
+        flex-direction: row;
+        justify-content: center;
     }
-    .videoPart .txt {
-        width: 100%;
-    }
-    .videoPart .txt p {
+    .videoPart .conversation {
         width: 40%;
-        font-size: 3vh;
+        margin: 0 30px;
+    }
+    .videoPart .conversation h3 {
+        font-size: 2.3rem;
+        margin: 20px 0;
+        line-height: 3.3rem;
+    }
+    .videoPart .wrap {
+        width: 35%;
+        margin: 0 20px;
+    }
+    .videoPart .wrap .txt {
+        width: 100%;
+    }
+    .videoPart .wrap .txt p {
+        width: 40%;
+        font-size: 1rem;
         line-height: 5vh;
         padding: 0 20px;
     }
@@ -235,9 +252,23 @@
         height: 100%;
     }
     .carousel {
-        width: 40%;
+        width: 50%;
+    }
+    .wineWrapPhoto .item .txt h1 {
+        font-size: 4rem;
+    }
+    .wineWrapPhoto .txt p {
+        font-size: 1rem;
     }
     .videoPart .copy {
         font-size: 2.5vh;
+    }
+    .videoPart .conversation h3 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    .videoPart .conversation p {
+        font-size: 1rem;
+        width: 80%;
     }
 }
